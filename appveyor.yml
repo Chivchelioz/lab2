@@ -1,0 +1,9 @@
+# Указываем язык и версию Python
+environment:
+  matrix:
+    - TOXENV=py38
+
+# Скрипты для запуска деплоя
+build_script:
+  - pip install -r requirements.txt
+
