@@ -1,7 +1,11 @@
-# Указываем язык и версию Python
+# Среда сборки
+image: Visual Studio 2022
+
+# Версия Python
 environment:
   matrix:
-    - TOXENV=py38
+    - PYTHON: "C:\\Python311"
+      PYTHON_VERSION: "3.11"
 
 # Скрипты для запуска деплоя
 build_script:
